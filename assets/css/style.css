@@ -1,0 +1,367 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+:root {
+    --primary: #333366;
+    --secondary: #ffcc33;
+    --light: #66CCFF;
+    --white: white;
+}
+
+@font-face {
+    font-family: gothic;
+    src: url(../fonts/Century\ Gothic.ttf);
+}
+
+@font-face {
+    font-family: gothic_Pro;
+    src: url(../fonts/GOTHICB.TTF);
+}
+
+body {
+    background-color: #f9fcfd !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* letter-spacing: 1px; */
+    font-family: gothic;
+
+}
+
+.primary-btn {
+    border: 1px solid var(--primary) !important;
+    color: var(--primary) !important;
+    font-family: gothic_pro !important;
+    position: relative;
+    padding: 10px 20px !important;
+}
+
+.primary-btn::after {
+    content: "";
+    border: 1px solid var(--primary) !important;
+    color: var(--white) !important;
+    font-family: gothic_pro !important;
+    background-color: var(--primary) !important;
+    transition: 0.3s ease;
+    background: azure;
+    width: 0;
+    opacity: 0;
+    position: absolute;
+    right: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* z-index: -1; */
+    overflow: hidden;
+    border-radius: 0 100% 100% 0;
+}
+
+.primary-btn:hover::after {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    border-radius: 0;
+    opacity: 1;
+    color: var(--white);
+    z-index: -1;
+    right: 0;
+}
+
+.primary-btn {
+    transition: 0.3s ease;
+    margin-block: 5px;
+}
+
+.primary-btn:hover {
+    color: var(--white) !important;
+    transition: 0.4s ease;
+    z-index: 999;
+}
+
+.heading {
+    color: var(--light);
+    font-size: 30px;
+    text-align: center;
+    font-family: gothic_pro;
+}
+
+.para-p {
+    font-size: 1.1rem;
+    font-family: gothic_pro;
+    color: var(--primary);
+    /* line-height: normal; */
+}
+
+.para {
+    font-size: 1.1rem;
+    font-family: gothic_pro;
+    color: var(--white);
+    /* line-height: normal; */
+}
+
+.top-header {
+    background-color: var(--primary);
+    height: 30px;
+}
+
+
+.top-social img {
+    width: 23px;
+    height: 23px;
+}
+
+.top-social a {
+    text-decoration: none;
+    padding-inline: 5px;
+}
+
+.banner-1 {
+    background: var(--secondary);
+    /* background: url(../images/all/Group\ 44.png); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.sec-2 img {
+
+    /* background: url(../images/all/sec2.png); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    /* position: absolute; */
+
+}
+
+.nav-custom {
+    background: var(--secondary) !important;
+}
+
+.nav-custom .navbar-toggler {
+    border: none;
+}
+
+.nav-custom .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.nav-custom img {
+    width: 150px;
+}
+
+.nav-custom li a {
+    font-family: gothic_Pro;
+    color: var(--primary);
+    font-weight: bolder;
+    font-size: 14px;
+    border-bottom: 2px solid transparent;
+    transition: 0.4s all;
+}
+
+.nav-custom .navbar-collapse.collapse.show {
+    padding-block: 10px;
+}
+
+.nav-custom .dropdown-menu.show {
+    background-color: var(--secondary);
+    border: 0;
+}
+
+.nav-custom li {
+    position: relative;
+    /* width: fit-content; */
+}
+
+.nav-custom .dropdown-menu.show li a:hover {
+    scale: none !important;
+}
+
+.nav-custom li a:hover {
+    scale: 1.04;
+    transition: 0.4s;
+    background-color: transparent;
+}
+
+.nav-custom li a:hover::after {
+    content: "";
+    border-bottom: 2px solid !important;
+    color: var(--primary) !important;
+    transition: 0.4s all;
+    position: absolute;
+    bottom: 0;
+    border: 0;
+    right: 0;
+    left: 0;
+    margin-inline: auto;
+}
+
+.nav-custom li a:focus {
+    color: none !important;
+    border: none;
+}
+
+.nav-custom .dropdown-toggle::after {
+    content: none;
+    /* margin: 0 !important; */
+    border: 0;
+}
+
+.nav-custom .navbar-collapse.collapse.show {
+    display: flex;
+    justify-content: center !important;
+    text-align: center;
+}
+
+/* nav css complete */
+
+.banner-heading {
+    color: var(--primary);
+    font-family: gothic_pro;
+    text-align: start;
+    font-size: 40px;
+    line-height: normal;
+}
+
+.b-img-1 {
+    position: absolute;
+    width: 50px;
+    top: 5%;
+    left: -3%;
+}
+
+.b-img-2 {
+    position: absolute;
+    width: 75px;
+    top: 5%;
+    right: 50%;
+}
+
+.b-img-3 {
+    position: absolute;
+    width: 75px;
+    top: 5%;
+    right: -3%;
+}
+
+.b-img-4 {
+    position: absolute;
+    width: 50px;
+    bottom: 5%;
+    left: -3%;
+}
+
+.b-img-5 {
+    position: absolute;
+    width: 75px;
+    bottom: 5%;
+    right: 50%;
+}
+
+.b-img-6 {
+    position: absolute;
+    width: 75px;
+    bottom: 5%;
+    right: -3%;
+}
+
+
+
+.banner-div-left {
+    padding-block: 70px;
+}
+
+.banner-div-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.banner-div-right img {
+    width: 300px;
+    object-fit: cover;
+    text-align: center;
+}
+
+.wave-sec {
+    background: url(../images/all/Group\ 45.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    /* margin-block: 10px; */
+    width: 100%;
+    position: relative;
+}
+
+.wave-sec .row {
+    padding-top: 8%;
+}
+
+.wave-ul {
+    padding: 18px;
+    color: white;
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-gap: 0 40px;
+}
+
+.wave-ul li {
+    font-size: 13px;
+    padding-block: 6px;
+}
+
+.wave-sun {
+    position: absolute;
+    top: -50px;
+    width: 100px;
+}
+
+.wave-cat {
+    position: absolute;
+    top: 16px;
+    right: 0;
+    width: 100px;
+}
+
+.wave-animal {
+    position: absolute;
+    width: 150px;
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .wave-sec {
+        background: var(--primary);
+        border-radius: 0 200px 0 100px;
+    }
+
+    .wave-cat {
+        top: -70px;
+        z-index: -1;
+    }
+}
+
+.rabit-content {
+    background-color: #d9d9d9;
+}
+
+.rabit-sec {
+    width: 100%;
+    background-color: #d9d9d9;
+    height: 100px;
+    position: absolute;
+    top: -90px;
+    z-index: -1;
+}
+
+.rabit-back {
+    position: absolute;
+    bottom: -80px;
+    z-index: -1;
+    width: 100%;
+}
