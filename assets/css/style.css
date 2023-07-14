@@ -334,17 +334,120 @@ body {
     bottom: 0;
 }
 
-@media (max-width: 768px) {
-    .wave-sec {
-        background: var(--primary);
-        border-radius: 0 200px 0 100px;
-    }
-
-    .wave-cat {
-        top: -70px;
-        z-index: -1;
-    }
+.rabit-animal {
+    position: absolute;
+    width: 150px;
+    bottom: -45%;
+    right: 25%;
 }
+
+.rabit-star {
+    position: absolute;
+    bottom: -30px;
+    width: 70px;
+    left: 10%;
+}
+
+.card-star {
+    position: absolute;
+    width: 70px;
+    left: -75px;
+    bottom: 30px
+}
+
+.card-star-top {
+    position: absolute;
+    width: 70px;
+    right: -75px;
+    top: -30px
+}
+
+.card-sec {
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.cards .card {
+    /* background: url(../images/all/Vector\ 7\ 1.png); */
+    height: 250px;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    width: 100%;
+    background-position: center;
+    margin-block: 10px;
+    border-radius: 0;
+    padding: 0;
+
+}
+
+.cards .card .card-body {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cards .card-img {
+    background: url(../images/all/Vector\ 7\ 1.png);
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    width: 100%;
+    background-position: center;
+
+}
+
+.card-content {
+    position: absolute;
+    top: 0;
+    margin-block: auto;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    /* justify-content: center; */
+    text-align: center;
+}
+
+/* .cards .card .top::after {
+    content: "";
+    position: absolute;
+    background-color: var(--primary);
+    width: 100%;
+    left: 0;
+    height: 70px;
+    border-radius: 100%;
+    top: -30px;
+
+}
+.cards .card .left::after {
+    content: "";
+    position: absolute;
+    background-color: #333366;
+    width: 20px;
+    left: -8px;
+    height: 100%;
+    border-radius: 100%;
+    top: 0;
+
+}
+.cards .card .right::after {
+    content: "";
+    position: absolute;
+    background-color: #333366;
+    width: 20px;
+    right: -8px;
+    height: 100%;
+    border-radius: 100%;
+    top: 0;
+
+} */
+
+
+
+
 
 .rabit-content {
     background-color: #d9d9d9;
@@ -361,7 +464,269 @@ body {
 
 .rabit-back {
     position: absolute;
-    bottom: -80px;
+    bottom: -60px;
     z-index: -1;
     width: 100%;
+}
+
+.cloud {
+    background: url(../images/all/Mask\ rounded\ with\ lines\ home.png);
+    /* background: url(../images/all/Group\ 44.png); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1050px;
+    width: 100%;
+    position: relative;
+    background-position: center;
+    overflow: hidden;
+}
+
+.cloud .d-flex .col-md-10 {
+    padding-block: 150px;
+}
+
+.cloud .rounded-text {
+    padding-block: 150px;
+    padding-inline: 50px;
+    text-align: center;
+}
+
+
+/* .cloud .row{
+    padding: 100px;
+} */
+.section-2 .container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.cloudsun {
+    position: absolute;
+    width: 125px;
+    top: 8%;
+    left: 10%;
+}
+
+.cloudanimal {
+    position: absolute;
+    width: 125px;
+    top: 10%;
+    right: 6%;
+}
+
+.clouddog {
+    position: absolute;
+    width: 150px;
+    top: 35%;
+    left: 5%;
+}
+
+.cloudflower {
+    position: absolute;
+    width: 125px;
+    top: 45%;
+    right: 8%;
+}
+
+.mini-footer {
+    background: url(../images/all/Vector\ 17.png);
+    /* background: url(../images/all/Group\ 44.png); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 100%;
+    position: relative;
+    background-position: top;
+    /* overflow-x: hidden; */
+}
+
+.footer {
+    background: url(../images/all/Mask\ group.png);
+    /* background: url(../images/all/Group\ 44.png); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 100%;
+    position: relative;
+    background-position: top;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -150px;
+}
+
+.footer img {
+    width: 150px;
+    height: 60px;
+    margin-block: 75px;
+}
+
+.footer-sec {
+    position: relative;
+}
+
+.footer-sec .footer-back {
+    background-color: var(--primary);
+    padding-top: 80px;
+}
+
+.footer-nav .dropdown-menu.show {
+    display: flex !important;
+}
+
+.roboat {
+    position: absolute;
+    width: 175px;
+    top: 0;
+    right: 50%;
+    z-index: 1;
+}
+
+
+.footer-nav ul li {
+    color: white;
+    width: fit-content;
+    list-style: none;
+    margin-block: 10px;
+}
+
+.footer-nav .dropdown a::after {
+    content: none !important;
+}
+
+.f1-icon {
+    position: absolute;
+    left: 0;
+    top: -350px;
+    width: 80px;
+
+}
+
+.f2-icon {
+    position: absolute;
+    left: 120px;
+    top: -250px;
+    width: 50px;
+
+}
+
+.f3-icon {
+    position: absolute;
+    left: 30px;
+    width: 70px;
+    top: -170px;
+}
+
+.f4-icon {
+    position: absolute;
+    left: 0;
+    top: -45px;
+    width: 60px;
+}
+
+.f5-icon {
+    position: absolute;
+    left: 0;
+    width: 60px;
+    top: 65px;
+}
+
+.f6-icon {
+    position: absolute;
+    right: 0;
+    top: -350px;
+    width: 60px;
+
+}
+
+.f7-icon {
+    position: absolute;
+    right: 223px;
+    top: -140px;
+    width: 46px;
+
+}
+
+.f8-icon {
+    position: absolute;
+    right: 30px;
+    width: 110px;
+    top: -225px;
+}
+
+.f9-icon {
+    position: absolute;
+    right: 200px;
+    top: -70px;
+    width: 60px;
+}
+
+.f10-icon {
+    position: absolute;
+    right: 0;
+    width: 80px;
+    top: 0;
+}
+
+.f-star-2 {
+    position: absolute;
+    right: 160px;
+    z-index: 1;
+    width: 75px;
+    top: -125px;
+}
+
+.f-star-1 {
+    position: absolute;
+    left: 160px;
+    z-index: 1;
+    width: 75px;
+    top: -100px;
+}
+
+@media (max-width: 992px) {
+    .rounded-text {
+        padding-block: 50px !important;
+        padding-inline: 10px !important;
+    }
+
+    .roboat {
+        width: 100px;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .wave-sec {
+        background: var(--primary);
+        border-radius: 0 200px 0 100px;
+    }
+
+    .wave-cat {
+        top: -70px;
+        z-index: -1;
+    }
+}
+
+@media (max-width: 442px) {
+    .cloud .d-flex .col-md-10 {
+        padding-block: 60px;
+    }
+
+    .f1-icon,
+    .f2-icon,
+    .f3-icon,
+    .f4-icon,
+    .f5-icon,
+    .f6-icon,
+    .f7-icon,
+    .f8-icon,
+    .f9-icon,
+    .f10-icon {
+        display: none;
+    }
 }
