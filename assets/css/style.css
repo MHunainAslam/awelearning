@@ -170,6 +170,7 @@ body {
 .nav-custom .dropdown-menu.show {
     background-color: var(--secondary);
     border: 0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
 .nav-custom li {
@@ -225,6 +226,47 @@ body {
     text-align: start;
     font-size: 40px;
     line-height: normal;
+}
+
+.b2-img-1 {
+    position: absolute;
+    width: 50px;
+    top: 25%;
+}
+
+.b2-img-2 {
+    position: absolute;
+    width: 75px;
+    top: 5%;
+    left: 20%;
+}
+
+.b2-img-3 {
+    position: absolute;
+    width: 75px;
+    top: 5%;
+    right: 10%;
+}
+
+.b2-img-4 {
+    position: absolute;
+    width: 50px;
+    bottom: 5%;
+    left: 10%;
+}
+
+.b2-img-5 {
+    position: absolute;
+    width: 50px;
+    bottom: 5%;
+    right: 20%;
+}
+
+.b2-img-6 {
+    position: absolute;
+    width: 50px;
+    bottom: 10%;
+    right: 0;
 }
 
 .b-img-1 {
@@ -469,6 +511,18 @@ body {
     width: 100%;
 }
 
+.cloudother {
+    background: url(../images/all/Mask\ group-1\ with\ lines.png) !important;
+    /* background: url(../images/all/Group\ 44.png); */
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    height: 100% !important;
+    width: 100% !important;
+    position: relative !important;
+    background-position: top !important;
+    overflow: hidden !important;
+}
+
 .cloud {
     background: url(../images/all/Mask\ rounded\ with\ lines\ home.png);
     /* background: url(../images/all/Group\ 44.png); */
@@ -518,15 +572,15 @@ body {
 .clouddog {
     position: absolute;
     width: 150px;
-    top: 35%;
-    left: 5%;
+    top: 350px;
+    left: 65px;
 }
 
 .cloudflower {
     position: absolute;
     width: 125px;
-    top: 45%;
-    right: 8%;
+    top: 550px;
+    right: 80px;
 }
 
 .mini-footer {
@@ -541,20 +595,23 @@ body {
     /* overflow-x: hidden; */
 }
 
+.mini-footer-sec {
+    height: 220px;
+}
+
 .footer {
     background: url(../images/all/Mask\ group.png);
     /* background: url(../images/all/Group\ 44.png); */
     background-size: cover;
     background-repeat: no-repeat;
-    height: 250px;
+    /* height: 250px; */
     width: 100%;
-    position: relative;
     background-position: top;
     overflow: hidden;
     display: flex;
     justify-content: center;
-    position: absolute;
-    top: -150px;
+    /* position: absolute;
+    top: -150px; */
 }
 
 .footer img {
@@ -570,6 +627,9 @@ body {
 .footer-sec .footer-back {
     background-color: var(--primary);
     padding-top: 80px;
+    position: absolute;
+    width: 100%;
+    top: 150px;
 }
 
 .footer-nav .dropdown-menu.show {
@@ -675,7 +735,7 @@ body {
     right: 160px;
     z-index: 1;
     width: 75px;
-    top: -125px;
+    top: 25px;
 }
 
 .f-star-1 {
@@ -683,9 +743,93 @@ body {
     left: 160px;
     z-index: 1;
     width: 75px;
-    top: -100px;
+    top: 50px;
 }
 
+.core-tabel {
+    background: url(../images/all/Vector\ 15.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    /* margin-block: 10px; */
+    width: 100%;
+    position: relative;
+}
+
+.core-tabel>div {
+    display: grid;
+    grid-template-columns: repeat(1, 130px auto);
+    align-items: center;
+}
+
+.table-name {
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    height: 100%;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.table-sentence {
+    border-bottom: 1px solid;
+    width: 100%;
+    padding-inline: 20px;
+    padding-block: 25px;
+}
+
+.table-star {
+    position: absolute;
+    width: 100px;
+    top: -40px;
+    left: 25px;
+}
+
+.table-rabit {
+    position: absolute;
+    width: 150px;
+    top: -40px;
+    right: -65px;
+}
+
+.table-animal {
+    position: absolute;
+    width: 200px;
+    bottom: -100px;
+    left: -100px;
+}
+
+.table-sec {
+    overflow: hidden;
+    /* overflow-y: clip; */
+    height: fit-content;
+    padding-block: 100px;
+}
+
+.solutioncloudrobo {
+    position: absolute;
+    bottom: -60px;
+    height: 200px;
+
+}
+
+.table-star2 {
+    position: absolute;
+    width: 75px;
+    bottom: 0px;
+    right: -35px;
+}
+
+.young-learner .cards img {
+    width: 100px;
+    height: 100px;
+}
+
+.wave-sec-other .row{
+    padding-block: 200px;
+}
 @media (max-width: 992px) {
     .rounded-text {
         padding-block: 50px !important;
@@ -710,6 +854,19 @@ body {
         top: -70px;
         z-index: -1;
     }
+
+    .mini-footer-sec {
+        height: 270px;
+    }
+}
+
+@media (max-width: 576px) {
+    .core-tabel>div {
+        display: grid;
+        grid-template-columns: repeat(1, 100px auto);
+        align-items: center;
+    }
+
 }
 
 @media (max-width: 442px) {
