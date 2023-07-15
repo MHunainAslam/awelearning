@@ -29,6 +29,21 @@ body {
 
 }
 
+.fixed-btn:hover {
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+.fixed-btn {
+    border: 1px solid var(--primary) !important;
+    color: var(--white) !important;
+    background-color: var(--primary) !important;
+    font-family: gothic_pro !important;
+    position: relative;
+    padding: 10px 20px !important;
+    transition: 0.5s;
+}
+
 .primary-btn {
     border: 1px solid var(--primary) !important;
     color: var(--primary) !important;
@@ -86,10 +101,25 @@ body {
     font-family: gothic_pro;
 }
 
+.heading-m {
+    color: var(--light);
+    font-size: 20px;
+    text-align: center;
+    font-family: gothic_pro;
+}
+
 .para-p {
     font-size: 1.1rem;
     font-family: gothic_pro;
     color: var(--primary);
+    /* line-height: normal; */
+}
+
+.text {
+    font-size: 0.8rem;
+    font-family: gothic;
+    font-weight: bold;
+    color: black;
     /* line-height: normal; */
 }
 
@@ -822,14 +852,43 @@ body {
     right: -35px;
 }
 
-.young-learner .cards img {
+.ylcards {
+    margin-block: 40px;
+}
+
+.young-learner .ylcards img {
     width: 100px;
     height: 100px;
 }
 
-.wave-sec-other .row{
+.core-card .ylcards,
+.core-card .card-header {
+    background-color: transparent;
+    border: 0;
+}
+
+.ylcards .btn {
+    position: absolute;
+}
+
+.core-card .card-header {
+    background: url(../images/all/Vector\ 15.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.core-card .card-body {
+    background: url(../images/all/Vector\ cardcard.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.wave-sec-other .row {
     padding-block: 200px;
 }
+
 @media (max-width: 992px) {
     .rounded-text {
         padding-block: 50px !important;
