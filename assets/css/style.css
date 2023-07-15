@@ -29,6 +29,12 @@ body {
 
 }
 
+.text-number {
+    color: var(--secondary);
+    font-size: 75px;
+    font-family: gothic_pro;
+}
+
 .fixed-btn:hover {
     scale: 1.1;
     transition: 0.5s;
@@ -44,12 +50,65 @@ body {
     transition: 0.5s;
 }
 
+
+
+.add-cart-btn {
+    border: 1px solid var(--white) !important;
+    color: var(--white) !important;
+    font-family: gothic_pro !important;
+    position: relative;
+    padding: 10px 20px !important;
+    transition: 0.3s ease;
+    margin-block: 5px;
+    border-radius: 10px;
+}
+
+.add-cart-btn::after {
+    content: "";
+    border: 1px solid var(--white) !important;
+    color: var(--primary) !important;
+    font-family: gothic_pro !important;
+    background-color: var(--white) !important;
+    transition: 0.3s ease;
+    background: azure;
+    width: 0;
+    opacity: 0;
+    position: absolute;
+    right: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* z-index: -1; */
+    overflow: hidden;
+    border-radius: 0 100% 100% 0;
+}
+
+.add-cart-btn:hover::after {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    border-radius: 0;
+    opacity: 1;
+    color: var(--primary);
+    z-index: -1;
+    right: 0;
+}
+
+.add-cart-btn:hover {
+    color: var(--primary) !important;
+    transition: 0.4s ease;
+    z-index: 999;
+}
+
+
 .primary-btn {
     border: 1px solid var(--primary) !important;
     color: var(--primary) !important;
     font-family: gothic_pro !important;
     position: relative;
     padding: 10px 20px !important;
+    transition: 0.3s ease;
+    margin-block: 5px;
 }
 
 .primary-btn::after {
@@ -83,10 +142,6 @@ body {
     right: 0;
 }
 
-.primary-btn {
-    transition: 0.3s ease;
-    margin-block: 5px;
-}
 
 .primary-btn:hover {
     color: var(--white) !important;
@@ -801,7 +856,7 @@ body {
 
 .core-tabel .table-3-col {
     display: grid;
-    grid-template-columns: repeat(1, 130px auto 130px) !important;
+    grid-template-columns: repeat(1, 160px auto 160px) !important;
     align-items: center;
 }
 
@@ -815,6 +870,7 @@ body {
     font-weight: bold;
     font-size: 1.2em;
 }
+
 .table-writer {
     border-left: 1px solid;
     border-bottom: 1px solid;
@@ -831,6 +887,7 @@ body {
     width: 100%;
     padding-inline: 20px;
     padding-block: 25px;
+    height: 100%;
 }
 
 .table-star {
@@ -884,6 +941,10 @@ body {
     height: 100px;
 }
 
+.core-card-other .card {
+    height: 100%;
+}
+
 .core-card .ylcards,
 .core-card .card-header {
     background-color: transparent;
@@ -913,6 +974,69 @@ body {
     padding-block: 200px;
 }
 
+.livewebinar img {
+    float: right;
+    width: 300px;
+    padding-left: 15px;
+}
+
+.livewebinar p {
+    text-align: justify;
+
+}
+
+.maker-img img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+
+}
+
+.quickfact-content li {
+    color: var(--primary);
+    font-size: 1rem;
+    font-family: gothic;
+    font-weight: bold;
+    padding-block: 10px;
+    list-style-position: inside;
+}
+
+.product-cards {
+    padding: 30px !important;
+}
+
+.product-cards .card-footer {
+    background-color: transparent;
+    border: 0;
+}
+
+.product-cards .card {
+    background: url(../images/all/Vector\ 7.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 100%;
+    border: 0;
+    padding: 30px;
+    background-size: cover;
+}
+
+.rating {
+    color: var(--secondary);
+}
+
+.product-cards .card-body {
+    background: url(../images/all/Vector\ img\ bg.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 100%;
+    border: 0;
+    background-size: contain;
+}
+
+.product-cards .card-body img {
+    width: 100%;
+}
+
 @media (max-width: 992px) {
     .rounded-text {
         padding-block: 50px !important;
@@ -924,6 +1048,13 @@ body {
         top: 0;
         right: 0;
         z-index: 1;
+    }
+    .product-cards {
+        padding: 15px !important;
+    }
+
+    .product-cards .card {
+        padding: 15px !important;
     }
 }
 
@@ -948,6 +1079,14 @@ body {
         display: grid;
         grid-template-columns: repeat(1, 100px auto);
         align-items: center;
+    }
+
+    .product-cards {
+        padding: 10px !important;
+    }
+
+    .product-cards .card {
+        padding: 10px !important;
     }
 
 }
