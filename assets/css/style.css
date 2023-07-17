@@ -615,6 +615,19 @@ body {
     overflow: hidden !important;
 }
 
+.cloudsmall {
+    background: url(../images/all/Mask\ group-2.png) !important;
+    /* background: url(../images/all/Group\ 44.png); */
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    height: 100% !important;
+    width: 100% !important;
+    position: relative !important;
+    background-position: top !important;
+    overflow: hidden !important;
+    padding-block: 175px;
+}
+
 .cloud {
     background: url(../images/all/Mask\ rounded\ with\ lines\ home.png);
     /* background: url(../images/all/Group\ 44.png); */
@@ -1037,6 +1050,148 @@ body {
     width: 100%;
 }
 
+.free-printable-content ul li {
+    padding-block: 15px;
+    font-weight: bold;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+.free-printable-content .fpl1 {
+    position: absolute;
+    left: 10;
+    top: 0;
+    width: 100px;
+}
+
+.free-printable-content .fpl2 {
+    position: absolute;
+    left: 30px;
+    width: 150px;
+    top: 250px;
+}
+
+.free-printable-content .fpl3 {
+    position: absolute;
+    left: 30px;
+    width: 100px;
+    top: 650px;
+}
+
+.free-printable-content .fpl4 {
+    position: absolute;
+    left: 10px;
+    width: 50px;
+    bottom: 750px;
+}
+
+.free-printable-content .fpl5 {
+    position: absolute;
+    left: 30px;
+    width: 50px;
+    bottom: 450px;
+}
+
+.free-printable-content .fpl6 {
+    position: absolute;
+    left: 10px;
+    width: 50px;
+    bottom: 0px;
+}
+
+.free-printable-content .fpr1 {
+    position: absolute;
+    right: 30px;
+    width: 50px;
+}
+
+.free-printable-content .fpr2 {
+    position: absolute;
+    right: 10px;
+    width: 150px;
+    top: 250px;
+}
+
+.free-printable-content .fpr3 {
+    position: absolute;
+    right: 30px;
+    width: 100px;
+    top: 650px;
+}
+
+.free-printable-content .fpr4 {
+    position: absolute;
+    right: 10px;
+    width: 50px;
+    bottom: 750px;
+}
+
+.free-printable-content .fpr5 {
+    position: absolute;
+    right: 30px;
+    width: 50px;
+    bottom: 450px;
+}
+
+.free-printable-content .fpr6 {
+    position: absolute;
+    right: 10px;
+    width: 50px;
+    bottom: 0px;
+}
+
+.custome-accordion {
+    z-index: 9;
+    padding-block: 100px;
+    border: 0;
+    border-radius: 0;
+    --bs-accordion-inner-border-radius: 0 !important;
+}
+
+.custome-accordion .accordion-item {
+    border: 0;
+    background-color: transparent;
+}
+
+.custome-accordion .accordion-header {
+    padding-block: 10px;
+}
+
+.custome-accordion .accordion-body {
+    padding-inline: 25px;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.custome-accordion .accordion-button:focus {
+    box-shadow: none;
+}
+
+.custome-accordion .accordion-button {
+    background-color: var(--primary) !important;
+    color: var(--white) !important;
+    font-family: gothic_pro;
+}
+
+.custome-accordion .accordion-button.collapsed {
+    background-color: #ECECEC !important;
+    color: var(--primary) !important;
+    font-family: gothic_pro;
+}
+
+.custome-accordion .accordion-button::after {
+    background: none;
+    color: var(--primary);
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%2333366" class="bi bi-arrow-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/></svg>');
+}
+
+.custome-accordion .accordion-button:not(.collapsed)::after {
+    background: none;
+    color: var(--white);
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-arrow-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/></svg>');
+
+}
+
 @media (max-width: 992px) {
     .rounded-text {
         padding-block: 50px !important;
@@ -1049,6 +1204,7 @@ body {
         right: 0;
         z-index: 1;
     }
+
     .product-cards {
         padding: 15px !important;
     }
