@@ -620,7 +620,7 @@ body {
     /* background: url(../images/all/Group\ 44.png); */
     background-size: cover !important;
     background-repeat: no-repeat !important;
-    height: 100% !important;
+    height: 600px !important;
     width: 100% !important;
     position: relative !important;
     background-position: top !important;
@@ -863,7 +863,7 @@ body {
 
 .core-tabel>div {
     display: grid;
-    grid-template-columns: repeat(1, 130px auto);
+    grid-template-columns: repeat(1, auto auto);
     align-items: center;
 }
 
@@ -877,7 +877,7 @@ body {
     border-right: 1px solid;
     border-bottom: 1px solid;
     height: 100%;
-    padding-left: 10px;
+    padding-inline: 10px;
     display: flex;
     align-items: center;
     font-weight: bold;
@@ -1037,6 +1037,29 @@ body {
     color: var(--secondary);
 }
 
+.testimonial-card .card-body {
+    /* background: url(../images/all/testimonial\ icon.png) !important; */
+    /* background: yellow !important; */
+    background-repeat: no-repeat !important;
+    background-position: top !important;
+    height: 100% !important;
+    border: 0;
+    background-size: cover !important;
+    position: relative;
+    overflow: hidden;
+    top: 15px;
+    bottom: 15px;
+
+}
+
+.testimonia-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100% !important;
+    width: 100% !important;
+}
+
 .product-cards .card-body {
     background: url(../images/all/Vector\ img\ bg.png);
     background-repeat: no-repeat;
@@ -1192,6 +1215,121 @@ body {
 
 }
 
+.contact-sec form input::placeholder {
+    color: #b1acacbf;
+}
+
+.contact-sec form input,
+.contact-sec form select,
+.contact-sec form textarea {
+    border-radius: 0;
+    background-color: #F4F2F2;
+    color: #b1acacbf;
+    padding-inline: 20px;
+    margin-block: 8px;
+}
+
+.contact-sec form input:focus,
+.contact-sec form select:focus,
+.contact-sec form textarea:focus {
+    box-shadow: none;
+    border-radius: 0;
+    color: #b1acacbf;
+    background-color: #F4F2F2;
+    padding-inline: 20px;
+    border: 1px solid var(--primary) !important;
+}
+
+.contact-sec .form-select {
+    --bs-form-select-bg-img: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="%23333366" class="bi bi-arrow-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/></svg>');
+}
+
+.checkboxes div {
+    width: auto;
+}
+
+.yticon {
+    width: 60px !important;
+    position: absolute;
+    left: 40%;
+    top: 35%;
+}
+
+.slickautoplay .slick-dots {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.slickautoplay .slick-dots li {
+    list-style: none;
+    margin-block: auto;
+}
+
+.slickautoplay .slick-dots button {
+    background-color: transparent;
+    border: 0;
+    font-size: 30px;
+    color: var(--primary);
+}
+
+.slickautoplay .product-cards {
+    padding: 15px !important;
+}
+
+.slickautoplay .slick-dots .slick-active button {
+    background-color: transparent;
+    border: 0;
+    font-size: 40px;
+    color: var(--light);
+    margin-bottom: 2px;
+}
+
+.autoplay .slick-next,
+.autoplay .slick-prev {
+    display: none !important;
+}
+
+.slick-right-btn {
+    font-size: 30px;
+    color: var(--primary);
+    position: absolute;
+    right: -35px;
+    top: 50%;
+}
+
+.slick-left-btn {
+    font-size: 30px;
+    color: var(--primary);
+    position: absolute;
+    left: -35px;
+    top: 50%;
+}
+
+.founded {
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+}
+
+.founded-date {
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+
+}
+.founded-img{
+    width: 100%;
+}
+
+.founded-date>div {
+    margin-block: auto;
+    padding-block: 10px;
+    padding: 10px;
+}
+
 @media (max-width: 992px) {
     .rounded-text {
         padding-block: 50px !important;
@@ -1233,7 +1371,7 @@ body {
 @media (max-width: 576px) {
     .core-tabel>div {
         display: grid;
-        grid-template-columns: repeat(1, 100px auto);
+        grid-template-columns: repeat(1, auto auto);
         align-items: center;
     }
 
