@@ -30,7 +30,9 @@ body {
 
 }
 
-
+.w-40{
+    width: 40%;
+}
 .text-number {
     color: var(--secondary);
     font-size: 75px;
@@ -465,11 +467,23 @@ body {
     right: 0;
     width: 125px;
 }
+.wave-cat-spt {
+    position: absolute;
+    bottom: -80px;
+    right: 0;
+    width: 125px;
+}
 
 .wave-animal {
     position: absolute;
     width: 150px;
     bottom: 0;
+}
+
+.wave-animal-spt {
+    position: absolute;
+    width: 180px;
+    bottom: -100px;
 }
 
 .rabit-animal {
@@ -703,7 +717,14 @@ body {
 .cloudflower {
     position: absolute;
     width: 125px;
-    top: 550px;
+    top: 675px;
+    right: 80px;
+}
+
+.cloudflower-h {
+    position: absolute;
+    width: 125px;
+    top: 530px;
     right: 80px;
 }
 
@@ -754,6 +775,7 @@ body {
     position: absolute;
     width: 100%;
     top: 125px;
+    z-index: -1;
 }
 
 .footer-nav .dropdown-menu.show {
@@ -763,7 +785,7 @@ body {
 .roboat {
     position: absolute;
     width: 175px;
-    top: 0;
+    top: -50px;
     right: 50%;
     z-index: 1;
 }
@@ -803,6 +825,13 @@ body {
     top: -150px;
 }
 
+.f3-icon-faq {
+    position: absolute;
+    left: 100px;
+    width: 60px;
+    top: -150px;
+}
+
 .f4-icon {
     position: absolute;
     left: 0;
@@ -835,8 +864,8 @@ body {
 
 .f8-icon {
     position: absolute;
-    right: 30px;
-    width: 124px;
+    right: 15px;
+    width: 100px;
     top: -200px;
 }
 
@@ -847,11 +876,47 @@ body {
     width: 60px;
 }
 
+.f9-icon-faq {
+    position: absolute;
+    right: 0;
+    top: -400px;
+    width: 60px;
+
+}
+
 .f10-icon {
     position: absolute;
     right: 0;
     width: 80px;
     top: 0;
+}
+
+.f7-icon-h {
+    position: absolute;
+    right: 223px;
+    top: -200px;
+    width: 46px;
+}
+
+.f8-icon-h {
+    position: absolute;
+    right: 30px;
+    width: 124px;
+    top: -200px;
+}
+
+.f9-icon-h {
+    position: absolute;
+    right: 325px;
+    top: -87px;
+    width: 60px;
+}
+
+.f11-icon-h {
+    position: absolute;
+    right: 0px;
+    top: -410px;
+    width: 60px;
 }
 
 .f-star-2 {
@@ -1122,85 +1187,89 @@ body {
 
 .free-printable-content .fpl1 {
     position: absolute;
-    left: 10;
-    top: 0;
-    width: 100px;
+    left: 50px;
+    top: -150px;
+    width: 70px;
 }
 
 .free-printable-content .fpl2 {
+
     position: absolute;
-    left: 30px;
-    width: 150px;
-    top: 250px;
+    left: 10px;
+    width: 120px;
+    top: 550px;
 }
+
+
 
 .free-printable-content .fpl3 {
     position: absolute;
     left: 30px;
     width: 100px;
-    top: 650px;
+    top: 1050px;
 }
 
 .free-printable-content .fpl4 {
     position: absolute;
-    left: 10px;
+    left: 70px;
     width: 50px;
-    bottom: 750px;
+    bottom: 1150px;
 }
 
 .free-printable-content .fpl5 {
     position: absolute;
     left: 30px;
-    width: 50px;
-    bottom: 450px;
+    width: 70px;
+    bottom: 650px;
 }
 
 .free-printable-content .fpl6 {
     position: absolute;
-    left: 10px;
-    width: 50px;
-    bottom: 0px;
+    left: 90px;
+    width: 40px;
+    bottom: 300px;
 }
 
 .free-printable-content .fpr1 {
     position: absolute;
-    right: 30px;
-    width: 50px;
+    right: 40px;
+    width: 70px;
 }
 
 .free-printable-content .fpr2 {
     position: absolute;
-    right: 10px;
-    width: 150px;
-    top: 250px;
+    right: 70px;
+    width: 90px;
+    top: 550px;
 }
 
 .free-printable-content .fpr3 {
     position: absolute;
-    right: 30px;
+    right: 40px;
     width: 100px;
-    top: 650px;
+    top: 1050px;
+
 }
 
 .free-printable-content .fpr4 {
     position: absolute;
-    right: 10px;
-    width: 50px;
-    bottom: 750px;
+    right: 50px;
+    width: 100px;
+    bottom: 1250px;
 }
 
 .free-printable-content .fpr5 {
     position: absolute;
-    right: 30px;
-    width: 50px;
-    bottom: 450px;
+    right: 120px;
+    width: 70px;
+    bottom: 750px;
 }
 
 .free-printable-content .fpr6 {
     position: absolute;
-    right: 10px;
-    width: 50px;
-    bottom: 0px;
+    right: 90px;
+    width: 80px;
+    bottom: 200px;
 }
 
 .custome-accordion {
